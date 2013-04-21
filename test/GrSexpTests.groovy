@@ -15,6 +15,7 @@ class GrSexpTests {
 	
 	println "$parsed"
 	assertThat parsed, is(not(null))
+	parsed = parsed[0]
 	assertThat parsed[0].toString(), is("<eq>")
 	assertThat parsed[1].toString(), is("<a>")
 	assertThat parsed[2].toString(), is("<b>")
@@ -27,6 +28,7 @@ class GrSexpTests {
 
         println "$parsed"
         assertThat parsed, is(not(null))
+	parsed = parsed[0]
 	assertThat parsed[0].toString(), is("<or>")
 	assertThat parsed[1][0].toString(), is("<eq>")
 	assertThat parsed[1][2].toString(), is("<b>")

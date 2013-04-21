@@ -60,7 +60,7 @@ class GrSexp {
 		}
 		i += 1
 	}
-	return stack.pop()[0]
+	return stack.pop()
 	}
 }
 
@@ -77,5 +77,12 @@ String toString(){
  data.each{ str.append(it)}
  "<${str.toString()}>"
 }
+
+String getText(){
+ def str = new StringBuffer()
+ data.each{ str.append(it)}
+ "${str.toString()}"
+}
+
 
 }
