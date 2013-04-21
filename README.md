@@ -11,9 +11,6 @@ Gr-sexp was written to allow another application to parse S-expressions properly
 Gr-sexp is a rewrite into Groovy of parts of a lisp parser for python posted at [Probably Programming](http://probablyprogramming.com/2009/11/23/a-simple-lisp-parser-in-python).
 
 
-##About the implementation
-
-To be written later.
 
 ##Compiling
 
